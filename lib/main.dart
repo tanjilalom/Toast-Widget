@@ -35,9 +35,8 @@ class _MyHomePageState extends State<MyHomePage> {
             child: ElevatedButton(
                 onPressed: () {
                   Fluttertoast.showToast(
-                    msg: "Hello I am the Toast",
-                    fontSize: 25,
-                    toastLength: Toast.LENGTH_LONG
+                    msg: "Error 404",
+                    gravity: ToastGravity.TOP,
                   );
                 },
                 child: Text("Press EM"))));
