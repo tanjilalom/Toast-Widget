@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 void main() {
   runApp(const MyApp());
@@ -27,15 +28,18 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: ElevatedButton(onPressed: (){
-          
-        }, child: Text("Press EM"))
-      )
-    );
+        body: Center(
+            child: ElevatedButton(
+                onPressed: () {
+                  Fluttertoast.showToast(
+                    msg: "Hello I am the Toast",
+                    fontSize: 25,
+                    toastLength: Toast.LENGTH_LONG
+                  );
+                },
+                child: Text("Press EM"))));
   }
 }
