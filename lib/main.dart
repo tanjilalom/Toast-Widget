@@ -36,7 +36,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 onPressed: () {
                   Fluttertoast.showToast(
                     msg: "Error 404",
-                    gravity: ToastGravity.TOP,
+                    backgroundColor: Colors.red,
+                    textColor: Colors.white,
                   );
                 },
                 child: Text("Press EM"))));
